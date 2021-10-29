@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:invalid:not(:placeholder-shown) {
+            border-color: red;
+        }
+
+        input:valid:not(:placeholder-shown) {
+            border-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h1>Опросник для обладателей котиков</h1>
+        <div>
+            <label for="name">Кличка питомца</label>
+            <input type="text" id="name" placeholder="Имя*" required pattern="[a-z A-Z а-я А-Я]{2,15}"></div>
+        <div>
+            <label for="email">E-mail владельца</label>
+            <input type="email" id="email" placeholder="E-mail*" required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"></div>
+        <div>
+            <div>
+                <label for="phone">Номер телефона владельца</label>
+                <input type="tel" id="phone" placeholder="+7 (123) ###-##-##" required
+                    pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18" /></div>
+            <div>
+                <label>Порода питомца</label>
+                <select>
+                    <option value="1">Сиамская кошка</option>
+                    <option value="2">Бенгальская кошка</option>
+                    <option value="3">Балинезийская кошка</option>
+                    <option value="4">Абиссинская кошка</option>
+                    <option value="5">Корниш-рекс</option>
+                </select></div>
+            <div>
+                <label>Чем питается:</label> <br>
+                Сухой корм<input type="checkbox"><br>
+                Влажный корм<input type="checkbox"><br>
+                Натуральный корм<input type="checkbox"></div>
+            <div>
+                <label>Пол:</label> <br>
+                Самец<input type="radio" name="sex"><br>
+                Самка<input type="radio" name="sex"> </div>
+            <div>
+                <label for="photo">Приложите фото питомца</label>
+                <input type="file" id="photo"> </div>
+            <div>
+                <button>сохранить</button>
+            </div>
+    </form>
+</body>
+
+</html>

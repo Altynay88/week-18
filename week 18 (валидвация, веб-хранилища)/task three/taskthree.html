@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h1>Chat</h1>
+    <div id="chat">
+
+    </div>
+
+    <form>
+        <div>
+            <label for="author">Name*
+                <span id="authorError"></span>
+            </label>
+        </div>
+        <div>
+            <input class="form_input" name="author" id="author" type="text" value="" class=inputs required />
+        </div>
+
+        <div>
+            <label for="comment">Comment <span id="commentError"></span>
+            </label>
+        </div>
+        <div>
+            <textarea class="text_area" name="comment" id="comment" class=inputs></textarea>
+        </div>
+
+        <div>
+            <input class="myButton" name="button" id="button" type="button" value="Send" onclick="checkMessage()" />
+        </div>
+
+
+    </form>
+
+
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>
